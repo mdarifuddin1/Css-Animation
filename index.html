@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+   img{
+       max-width: 200px;
+       height: auto;
+       border: 5px solid brown;
+       display: block;
+       margin: 0 auto;
+       margin-top: 140px;
+       border-radius: 53%;
+       animation-name: img-item;
+       animation-duration: 3s;
+       position: absolute;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+
+   }
+   
+  @keyframes img-item{
+
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 100px;
+        left: 0;
+        opacity: 0.5;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+
+
+
+  }
+
+
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1621541589336-bdd67362573d?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+</body>
+</html>
